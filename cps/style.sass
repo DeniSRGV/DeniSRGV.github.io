@@ -1,335 +1,458 @@
-*
-  font-family: 'TT Lakes', sans-serif
 
-  padding: 0
-  margin: 0
+*
+    font-family: 'TT Lakes', sans-serif
+
+    padding: 0
+    margin: 0
 
 html
-  box-sizing: border-box !important
+    box-sizing: border-box !important
 
-::before, ::after
-  box-sizing: inherit
+    &::before, &::after
+        box-sizing: inherit
+
 a
-  text-decoration: none
+    text-decoration: none
 .body
-  position: relative
-  min-width: 320px
+    position: relative
+    min-width: 320px
 
 .container
-  padding: 0 16px
-  margin: 0 auto
+    padding: 0 16px
+    margin: 0 auto
 
 .header
-
-  position: relative
-  padding: 18px 0
-  max-height: 88px
-  &::after
-    position: absolute
-    content: ''
-    height: 1px
-    width: 100%
-    background-color: #D9FFF5
-    bottom: 0
+    position: relative
+    padding: 18px 0
+    max-height: 88px
+    &::after
+        position: absolute
+        content: ''
+        height: 1px
+        width: 100%
+        background-color: #D9FFF5
+        bottom: 0
 
     &__items
-      display: flex
-      justify-content: space-between
-      align-items: center
+        display: flex
+        justify-content: space-between
+        align-items: center
     &__left-block
-      display: flex
-      justify-content: space-between
-      align-items: center
-      width: 152px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 152px
     &__right-block
-      display: flex
-      justify-content: space-between
-      align-items: center
-      width: 96px
-      .header__item
-        position: relative
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 96px
+        .header__item
+            position: relative
 
-        &:nth-child(4)
-          &::after
-            content: ''
-            position: absolute
-            left: -20px
-            top: 50%
-            transform: translateY(-50%)
-            height: 32px
-            width: 2px
-            background: #EAEAEA
-            border-radius: 1px
+            &:nth-child(4)
+                &::after
+                    content: ''
+                    position: absolute
+                    left: -20px
+                    top: 50%
+                    transform: translateY(-50%)
+                    height: 32px
+                    width: 2px
+                    background: #EAEAEA
+                    border-radius: 1px
             &_med
-              display: none
+                display: none
 
     &__item
-      position: relative
-      width: 40px
-      height: 40px
-      background-color: #FF3E79
-      border-radius: 20px
-      &_xl
-        display: none
+        position: relative
+        width: 40px
+        height: 40px
+        background-color: #FF3E79
+        border-radius: 20px
+        &_xl
+            display: none
 
         img
-          position: absolute
-          left: 50%
-          top: 50%
-          transform: translate(-50%, -50%)
+            position: absolute
+            left: 50%
+            top: 50%
+            transform: translate(-50%, -50%)
 
 .logo
-  max-width: 96px
-  max-height: 50px
-  img
-    width: 100%
+    max-width: 96px
+    max-height: 50px
+    img
+        width: 100%
 
 .services
-  min-height: 509px
-  background: #F8F8F8
-  padding: 24px 0 0 0
-  position: relative
-  h1
-    font-size: 28px
-    line-height: 40px
-    text-align: left
-    font-weight: 700
-    margin-bottom: 24px
-    &::before
-      content: ''
-      position: absolute
-      left: 0
-      background: #41F6D7
-      width: 3px
-      height: 40px
-      font-size: 28px
-      border-radius: 0 30% 30% 0
+    min-height: 509px
+    background: #F8F8F8
+    padding: 24px 0 0 0
+    position: relative
+    h1
+        font-size: 28px
+        line-height: 40px
+        text-align: left
+        font-weight: 700
+        margin-bottom: 24px
+        &::before
+            content: ''
+            position: absolute
+            left: 0
+            background: #41F6D7
+            width: 3px
+            height: 40px
+            font-size: 28px
+            border-radius: 0 30% 30% 0
 
     &__descr
 
-      display: flex
-      flex-direction: column
-      align-items: center
-      margin-top: 24px
-      &-field
-        position: relative
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-top: 24px
+        &-field
+            position: relative
         &-text
-          max-height: 98px
-          font-weight: 400
-          overflow: hidden
-          font-size: 14px
-          line-height: 20px
-          letter-spacing: 0.2px
+            max-height: 98px
+            font-weight: 400
+            overflow: hidden
+            font-size: 14px
+            line-height: 20px
+            letter-spacing: 0.2px
         &-further
-          position: relative
-          margin-top: 18px
-          font-weight: 500
-          font-size: 16px
-          line-height: 24px
-          color: #1B1C21
-          margin-left: 32px
-          &::before
-            content: ''
-            position: absolute
-            left: -16px
-            top: 50%
-            transform: translateY(-50%)
-            background-image: url("../img/arrow.svg")
-            background-repeat: no-repeat
-            width: 8px
-            height: 12px
+            position: relative
+            margin-top: 18px
+            font-weight: 500
+            font-size: 16px
+            line-height: 24px
+            color: #1B1C21
+            margin-left: 32px
+            span
+                display: block
+                position: absolute
+                left: -16px
+                top: 50%
+                transform: translateY(-50%)
+                background-image: url("../img/arrow.svg")
+                background-repeat: no-repeat
+                width: 8px
+                height: 12px
 
         &-img img
-          position: absolute
-          left: 0
-          width: 100%
-          margin-top: 25px
+            position: absolute
+            left: 0
+            width: 100%
+            margin-top: 25px
 
 .slider
-  &__wrapper
-    display: flex
-    justify-content: start
-    align-items: center
-    min-width: 100%
-    height: 40px
-    overflow-x: auto
-    &::-webkit-scrollbar
-      display: none
-    &__item
-      display: flex
-      padding: 8px 9px
-      white-space: nowrap
-      align-items: center
-      font-size: 16px
-      line-height: 16px
-      margin-right: 19px
-      font-weight: 500
-      max-width: 222px
-      cursor: pointer
-      color: #7E7E82
-      &_active
-        background: #FFFFFF
-        border: 2px solid #B8FFEC
-        border-radius: 6px
-
-@media ( min-width: 768px )
-  .container
-    padding: 0 24px
-    .header
-      &__left-block
-        width: 178px
-        max-height: 160px
-        .header__logo
-          position: relative
-          &::before
-            content: ''
-            position: absolute
-            left: -20px
-            top: 50%
-            transform: translateY(-50%)
-            height: 32px
-            width: 2px
-            background: #EAEAEA
-            border-radius: 1px
-        &__right-block
-          width: 290px
-
-          .header__item
-            &_med
-              display: block
-              &:nth-child(4)
-                &::after
-                  left: -13px
-    .services
-      &__descr
-        flex-direction: row
-        justify-content: space-between
-        align-items: flex-start
-        margin-top: 32px
-        &-text
-          max-height: 160px
-          max-width: 312px
-          letter-spacing: 0.2px
-          &-img img
-            margin-top: 0
-
-            position: static
-            width: 360px
-            height: 208px
-            border-radius: 8px
-
-@media ( min-width: 1120px )
-  .header
-    display: none
-    &__item
-      &_xl
+    &__wrapper
         display: flex
+        justify-content: start
+        align-items: center
+        min-width: 100%
+        height: 40px
+        overflow-x: auto
+        scrollbar-width: none
+        &::-webkit-scrollbar
+            display: none
+    &__item
+        display: flex
+        padding: 8px 9px
         white-space: nowrap
-        justify-content: space-between
-        a
-          display: block
-          position: absolute
-          left: -133px
-          top: 50%
-          transform: translateY(-50%)
-          font-weight: 500
-          font-size: 16px
-          line-height: 24px
-          color: #1B1C21
+        align-items: center
+        font-size: 16px
+        line-height: 16px
+        margin-right: 19px
+        font-weight: 500
+        max-width: 222px
+        cursor: pointer
+        color: #7E7E82
+        &_active
+            background: #FFFFFF
+            border: 2px solid #B8FFEC
+            border-radius: 6px
 
-    .services
-      &__field
-        display: flex
-        justify-content: space-between
-        align-items: flex-start
-        &-right
-          display: flex
-          justify-content: space-between
-          width: 240px
-        &__descr
-          &-text
-            max-width: 490px
-            &-img img
-              height: 307px
-              width: 531px
 // mobile menu
 .menu
-  position: absolute
-  top: 0
-  left: 0
-  min-width: 320px
-  height: 1024px
-  background: #FFFFFF
-  box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2)
-  .container
-    position: relative
-    padding: 18px 24px 32px
-    height: 100%
-    box-sizing: border-box
+    position: absolute
+    top: 0
+    left: 0
+    min-width: 320px
+    height: 1024px
+    background: #FFFFFF
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2)
+    .container
+        position: relative
+        padding: 18px 24px 32px
+        height: 100%
+        box-sizing: border-box
     &__item:first-child
-      margin-right: 16px
+        margin-right: 16px
     .logo
-      transform: translateX(-40px)
+        transform: translateX(-40px)
     &__items
-      width: 152px
+        width: 152px
 
     &__list
-      display: flex
-      flex-direction: column
-      justify-content: space-between
-      margin-top: 50px
-      list-style: none
-      height: 468px
-      &-item
-        a
-          font-weight: 500
-          font-size: 16px
-          line-height: 24px
-          color: #1B1C21
-          opacity: 1
-          transition-duration: 0.5s
-          a:hover,
-          a:focus
-            opacity: 0.8
-            color: #7E7E82
-            &_active
-              a
-                color: #7E7E82
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        margin-top: 50px
+        list-style: none
+        height: 468px
+        &-item
+            a
                 position: relative
+                font-weight: 500
+                font-size: 16px
+                line-height: 24px
+                color: #1B1C21
+                opacity: 1
+                transition-duration: 0.5s
+            a:hover,
+            a:focus
+                opacity: 0.8
+                color: #7E7E82
                 &::before
-                  content: ''
-                  position: absolute
-                  left: -24px
-                  top: 50%
-                  transform: translateY(-50%)
-                  background: #41F6D7
-                  width: 4px
-                  height: 32px
-                  border-radius: 0 30% 30% 0
+                    content: ''
+                    position: absolute
+                    left: -24px
+                    top: 50%
+                    transform: translateY(-50%)
+                    background: #41F6D7
+                    width: 4px
+                    height: 32px
+                    border-radius: 0 30% 30% 0
+                    transition: all 1s linear
+            &_active
+                a
+                    color: #7E7E82
+                    &::before
+                        content: ''
+                        position: absolute
+                        left: -24px
+                        top: 50%
+                        transform: translateY(-50%)
+                        background: #41F6D7
+                        width: 4px
+                        height: 32px
+                        border-radius: 0 30% 30% 0
     &__email
-      margin: 16px 0 12px
-      a
+        margin: 16px 0 12px
+        a
+            color: #1B1C21
+            font-size: 16px
+            line-height: 24px
+            font-weight: 500
+    &__phone a
+        font-size: 24px
+        line-height: 32px
+        font-weight: 700
         color: #1B1C21
+    &__languages
+        margin-top: 40px
+        display: flex
+        justify-content: space-between
+        width: 88px
+    &__language
+        color: #1B1C21
+        font-weight: 500
         font-size: 16px
         line-height: 24px
-        font-weight: 500
-    &__phone a
-      font-size: 24px
-      line-height: 32px
-      font-weight: 700
-      color: #1B1C21
-    &__languages
-      margin-top: 40px
-      display: flex
-      justify-content: space-between
-      width: 88px
-    &__language
-      color: #1B1C21
-      font-weight: 500
-      font-size: 16px
-      line-height: 24px
-      &_active
-        color: #7E7E82
+        &_active
+            color: #7E7E82
+
     &__block-bottom
-      position: absolute
-      bottom: 32px
+        position: absolute
+
+        bottom: 32px
+//repair
+.repair
+
+    max-height: 900px
+    background-color: #F2F2F2
+    &__title
+        background-color: #ffff
+        max-height: 80px
+        padding: 16px 16px
+        h3
+            font-weight: 400
+            font-size: 16px
+            line-height: 24px
+            text-transform: uppercase
+            color: #7E7E82
+    &__brands
+        background: #F2F2F2
+        min-height: 100vh
+        &-wrapper
+            display: none
+    &__swiper
+        box-sizing: border-box
+        padding: 16px 0 37px 16px
+        &-item
+            position: relative
+            border-radius: 3px
+            height: 72px
+
+            background: #FFFFFF
+            img
+                position: absolute
+                top: 50%
+                left: 16px
+                transform: translateY(-50%)
+            span
+                display: block
+                position: absolute
+                right: 16px
+                top: 50%
+                transform: translateY(-50%)
+                background-image: url("../img/brands/go.svg")
+                width: 40px
+                height: 40px
+                background-repeat: no-repeat
+    &__text
+        display: none
+    .swiper-pagination
+        position: static
+
+    .swiper-pagination-bullet
+        margin: 16px 6px 0 !important
+        width: 12px
+        height: 12px
+        background-color: #DDDDDD
+        &-active
+            background-color: #B5B6BC
+    &__swiper-wrapper
+        width: 100%
+    .swiper-slide
+        height: 72px
+        width: 224px
+
+@media ( min-width: 768px )
+    .container
+        padding: 0 24px
+    .header
+        &__left-block
+            width: 178px
+            max-height: 160px
+            .header__logo
+                position: relative
+                &::before
+                    content: ''
+                    position: absolute
+                    left: -20px
+                    top: 50%
+                    transform: translateY(-50%)
+                    height: 32px
+                    width: 2px
+                    background: #EAEAEA
+                    border-radius: 1px
+        &__right-block
+            width: 290px
+
+            .header__item
+                &_med
+                    display: block
+                &:nth-child(4)
+                    &::after
+                        left: -13px
+    .services
+        &__descr
+            flex-direction: row
+            justify-content: space-between
+            align-items: flex-start
+            margin-top: 32px
+            &-text
+                max-height: 160px
+                max-width: 312px
+                letter-spacing: 0.2px
+            &-img img
+                margin-top: 0
+
+                position: static
+                width: 360px
+                height: 208px
+                border-radius: 8px
+    .repair
+        &__brands
+            position: relative
+        &__swiper
+            padding: 24px 24px
+            &-wrapper
+                display: flex
+                width: 720px
+                justify-content: space-between
+                flex-wrap: wrap
+                height: 160px
+                // height: 400px
+                overflow: hidden
+                transition: height 0.5s
+
+            .show-content
+                height: 254px
+                transition: 0.5s
+        .swiper-slide
+            margin-bottom: 16px
+            width: 224px
+        &__text
+            margin: 0 0
+            display: block
+            cursor: pointer
+            top: 208px
+            position: absolute
+            left: 57px
+            font-size: 16px
+            z-index: 1
+            transition: transform 0.4s
+
+@media ( min-width: 1120px )
+    .header
+        display: none
+        &__item
+            &_xl
+                display: flex
+                white-space: nowrap
+                justify-content: space-between
+                a
+                    display: block
+                    position: absolute
+                    left: -133px
+                    top: 50%
+                    transform: translateY(-50%)
+                    font-weight: 500
+                    font-size: 16px
+                    line-height: 24px
+                    color: #1B1C21
+
+    .services
+        &__field
+            display: flex
+            justify-content: space-between
+            align-items: flex-start
+            &-right
+                display: flex
+                justify-content: space-between
+                width: 240px
+        &__descr
+            &-text
+                max-width: 490px
+            &-img img
+                height: 307px
+                width: 531px
+    .repair
+        &__swiper
+            &-wrapper
+                width: 1056px
+        .swiper-slide
+            width: 240px
+            &_last
+                margin-right: auto
+                margin-left: 32px
+
+        // &__brands-wrapper
+        //     display: flex
+        //     flex-wrap: wrap
+        //     width: 789px
+        //     justify-content: space-between
