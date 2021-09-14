@@ -13,11 +13,14 @@ window.addEventListener('DOMContentLoaded', function() {
   menu();
   accordeon();
   modals();
+  slider();
 
-    const widthClient = document.documentElement.clientWidth;
-    if (widthClient >= 320 && widthClient <= 767 ) {
+
+
+
+    window.addEventListener('resize', ()=> {
+      // menu();
       slider();
-    }
-
+    });
     console.log("it works");
 });

@@ -16,6 +16,7 @@ const menu = ()=> {
       menu.classList.remove( 'fadein',);
       document.querySelector('.header__right-block').prepend(itemBlock);
       itemBlock.style.display = "";
+
     }
     function moovingBlock(){
       menuBlock.prepend(itemBlock);
@@ -40,24 +41,27 @@ const menu = ()=> {
         if (e.code === "Escape" && menuOverlay.classList.contains('menu_active')) {
             closeMenu();
         }
-    });
-    }
-    hamburger.forEach(item => {
-      item.addEventListener('click', () => {
-        if (menuOverlay.classList.contains('menu_active')){
-
-          closeMenu();
-
-        } else {
-          menu.classList.remove('fade-out-left');
-          menuOverlay.classList.add('menu_active','fadein');
-          moovingBlock();
-
-
-        }
-
       });
-    });
+      hamburger.forEach(item => {
+        item.addEventListener('click', () => {
+          if (menuOverlay.classList.contains('menu_active') ){
+
+            closeMenu();
+
+          }else{
+            menu.classList.remove('fade-out-left');
+
+            menuOverlay.classList.add('menu_active','fadein');
+            moovingBlock();
+
+
+          }
+
+        });
+      });
+
+    }
+
     menuItem.forEach((item) => {
         item.addEventListener('click', (e) => {
           e.preventDefault();
@@ -67,6 +71,8 @@ const menu = ()=> {
             },1000);
             menu.classList.toggle('menu__list-item_active"');
             menu.classList.add('fade-out-left');
+
+
           }
 
 
@@ -76,7 +82,7 @@ const menu = ()=> {
         if (e.target === menuOverlay && menuOverlay.classList.contains('menu_active')) {
             closeMenu();
         }
-    });
+      });
     });
 
 

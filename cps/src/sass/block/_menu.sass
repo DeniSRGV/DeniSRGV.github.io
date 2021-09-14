@@ -46,32 +46,34 @@
         list-style: none
         height: 360px
         &-item
+
             a
+                display: block
                 position: relative
                 font-weight: 500
                 font-size: 16px
                 line-height: 24px
                 color: $black
                 opacity: 1
-                transition-duration: 0.5s
+                transition-duration: 0.2s
                 &:visited
                     color: $black
-            a:hover,
-            a:focus
+                &:hover
+                    color: $gray
+                    opacity: 0.8
+                    transform: scaleY(1.07)
+                    transition: 0.2s
+                    &::before
+                        content: ''
+                        position: absolute
+                        left: -24px
+                        top: 50%
+                        transform: translateY(-50%)
+                        background: #41F6D7
+                        width: 4px
+                        height: 32px
+                        border-radius: 0 30% 30% 0
 
-                opacity: 0.8
-                color: $gray
-                &::before
-                    content: ''
-                    position: absolute
-                    left: -24px
-                    top: 50%
-                    transform: translateY(-50%)
-                    background: #41F6D7
-                    width: 4px
-                    height: 32px
-                    border-radius: 0 30% 30% 0
-                    transition: all 1s linear
             &_active a
 
                 color: $gray
