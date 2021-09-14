@@ -274,7 +274,9 @@ a {
         color: #1B1C21; }
       .menu__list-item a:hover {
         color: #7E7E82;
-        opacity: 0.8; }
+        opacity: 0.8;
+        transform: scaleY(1.07);
+        transition: 0.2s; }
         .menu__list-item a:hover::before {
           content: '';
           position: absolute;
@@ -284,8 +286,7 @@ a {
           background: #41F6D7;
           width: 4px;
           height: 32px;
-          border-radius: 0 30% 30% 0;
-          transition: all 1s linear; }
+          border-radius: 0 30% 30% 0; }
     .menu__list-item_active a {
       color: #7E7E82; }
       .menu__list-item_active a::before {
